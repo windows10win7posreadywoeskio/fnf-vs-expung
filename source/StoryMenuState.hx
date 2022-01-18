@@ -32,7 +32,7 @@ class StoryMenuState extends MusicBeatState
 	var scoreText:FlxText;
 
 	private static var lastDifficultyName:String = '';
-	var curDifficulty:Int = 1;
+	var curDifficulty:Int = 0;
 
 	var txtWeekTitle:FlxText;
 	var bgSprite:FlxSprite;
@@ -320,8 +320,8 @@ class StoryMenuState extends MusicBeatState
 		curDifficulty += change;
 
 		if (curDifficulty < 0)
-			curDifficulty = CoolUtil.difficulties.length-1;
-		if (curDifficulty >= CoolUtil.difficulties.length)
+			curDifficulty = 0;
+		if (curDifficulty >= 0)
 			curDifficulty = 0;
 
 		var image:Dynamic = Paths.image('menudifficulties/' + Paths.formatToSongPath(CoolUtil.difficulties[curDifficulty]));

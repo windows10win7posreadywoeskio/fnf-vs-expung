@@ -30,7 +30,7 @@ class FreeplayState extends MusicBeatState
 
 	var selector:FlxText;
 	private static var curSelected:Int = 0;
-	var curDifficulty:Int = -1;
+	var curDifficulty:Int = 0;
 	private static var lastDifficultyName:String = '';
 
 	var scoreBG:FlxSprite;
@@ -363,8 +363,8 @@ class FreeplayState extends MusicBeatState
 		curDifficulty += change;
 
 		if (curDifficulty < 0)
-			curDifficulty = CoolUtil.difficulties.length-1;
-		if (curDifficulty >= CoolUtil.difficulties.length)
+			curDifficulty = 0;
+		if (curDifficulty >= 0)
 			curDifficulty = 0;
 
 		lastDifficultyName = CoolUtil.difficulties[curDifficulty];

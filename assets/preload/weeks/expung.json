@@ -1,0 +1,40 @@
+{
+	"songs": [
+		[
+			"godlike",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"unthinkable",
+			"dad",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"difficulties": "",
+	"weekCharacters": [
+		"bf",
+		"bf",
+		"gf"
+	],
+	"storyName": "cry about it",
+	"weekName": "Expunged",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": true,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}
